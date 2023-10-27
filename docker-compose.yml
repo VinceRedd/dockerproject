@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   flasksoftuidashboard:
-    # container_name: appseed_app
     restart: always
     env_file: './flask-soft-ui-dashboard/.env'
     build: './flask-soft-ui-dashboard'
@@ -10,8 +9,6 @@ services:
     networks:
       - db_network
       - web_network
-
-
 
   flaskmaterialdashboard:
     container_name: flaskmaterialdashboard
@@ -39,8 +36,6 @@ services:
     networks:
       - db_network
       - web_network
-
-
 
 
   flaskvoltdashboard:
